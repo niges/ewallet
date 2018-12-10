@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteBase /ewallet/
+
+RewriteRule server/datas/(.*)/(.*) server/Data.php?url=$1&id=$2 [L,QSA]
+
+RewriteRule server/users/(.*) server/User.php?url=$1 [L,QSA]
+
+RewriteRule server/categories/(.*)/(.*) server/Category.php?url=$1&id=$2 [L,QSA]
+
+
+
